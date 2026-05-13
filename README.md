@@ -20,11 +20,6 @@ A Restormer-based model for denoising microscopy TIFF images, packaged as a Gran
 ├── do_build.sh           # Build the submission container
 ├── do_test_run.sh        # Build + run a forward pass on test/input
 ├── do_save.sh            # Save container as gzip tarball for upload
-├── resources/            # Static files copied into the container (model weights, etc.)
-├── model/                # Optional tarball-uploaded model artifacts (mounted at /opt/ml/model)
-└── test/                 # Small example inputs/outputs for local testing
-    ├── input/interface_0/
-    └── output/interface_0/
 ```
 
 Datasets (`noisy_train/`, `gt_train/`, `gt_test/`) and trained checkpoints (`*.pth`) are not included in the repo — see the challenge page for downloads.
